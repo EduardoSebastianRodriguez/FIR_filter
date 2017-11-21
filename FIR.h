@@ -57,9 +57,9 @@ class FIR{
 	void   setFreq(double x, int i);  //Sets the cut-off frequency of index i: if the filter is first order, i=0
 	void   setBuffer(double x, int i);//Sets the value of index i of the buffer to x
 	void   lowpass(double f);	  //Generates the coefficients of a low pass filter with cut-off frequency f
-	void   highpass(double f);     //Generates the coefficients of a high pass filter with cut-off frequency f
-	void   stopband(double f[2]); //Generates the coefficients of a stop band filter with cut-off frequencies f
-	void   passband(double f[2]); //Generates the coefficients of a pass band filter with cut-off frequencies f
+	void   highpass(double f);        //Generates the coefficients of a high pass filter with cut-off frequency f
+	void   stopband(double f[2]);     //Generates the coefficients of a stop band filter with cut-off frequencies f
+	void   passband(double f[2]);     //Generates the coefficients of a pass band filter with cut-off frequencies f
 	double filter(double x);	  //Filters the scalar input x by using the coefficients of the filter and returns a scalar output
 					  //If no coefficient generator method is applied, the coefficients are all zero.
 };
